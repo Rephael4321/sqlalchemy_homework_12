@@ -1,5 +1,3 @@
-from options import Options
-
 def getInt(msg: str) -> int:
     value = input(msg)
     while not value.isnumeric():
