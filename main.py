@@ -12,9 +12,9 @@ def printMenu():
 
     if choiceIs(choice, 'PRINT_STUDENTS_COUNT'):
         fetchData(count_students_query, 'Students count: ')
-    if choiceIs(choice, 'PRINT_AVERAGE_AGES'):
+    elif choiceIs(choice, 'PRINT_AVERAGE_AGES'):
         fetchData(average_ages_query, 'Students ages average: ')
-    if choiceIs(choice, 'INSERT_NEW_STUDENT'):
+    elif choiceIs(choice, 'INSERT_NEW_STUDENT'):
         insertData(insert_student_query)
     elif choiceIs(choice, 'EXIT'):
         exitFunc()
