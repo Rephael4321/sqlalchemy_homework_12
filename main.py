@@ -8,15 +8,15 @@ def printMenu():
     print('What do you want to do?')
     for option in Options:
         print(f'{option.value}. {option.name.replace('_', ' ').capitalize()}')
-    choice = getInt('Enter your choice: ')
+    choice = Options(getInt('Enter your choice: '))
 
-    if choiceIs(choice, 'PRINT_STUDENTS_COUNT'):
+    if choice == Options.PRINT_STUDENTS_COUNT:
         fetchData(count_students_query, 'Students count: ')
-    elif choiceIs(choice, 'PRINT_AVERAGE_AGES'):
+    elif choice == Options.PRINT_AVERAGE_AGES:
         fetchData(average_ages_query, 'Students ages average: ')
-    elif choiceIs(choice, 'INSERT_NEW_STUDENT'):
+    elif choice == Options.INSERT_NEW_STUDENT:
         insertData(insert_student_query)
-    elif choiceIs(choice, 'EXIT'):
+    elif choice == Options.EXIT:
         exitFunc()
 
 while True:
