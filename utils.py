@@ -5,6 +5,3 @@ def getInt(msg: str) -> int:
     while not value.isnumeric():
         value = input('Please enter a valid number: ')
     return int(value)
-
-def choiceIs(choice: int, option: str) -> bool:
-    return choice == Options[option].value

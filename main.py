@@ -1,6 +1,6 @@
 from options import Options
 from functions import fetchData, insertData, exitFunc
-from utils import getInt, choiceIs
+from utils import getInt
 from queries import count_students_query, average_ages_query, insert_student_query
 
 def printMenu():
