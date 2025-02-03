@@ -1,5 +1,5 @@
 from options import Options
-from functions import fetchData, insertData, exitFunc
+from menu_functions import fetchData, insertData, exitFunc
 from utils import getInt
 from queries import count_students_query, average_ages_query, insert_student_query
 from dotenv import dotenv_values
